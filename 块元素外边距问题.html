@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+        }
+        .first {
+            margin-bottom: 60px;
+            background-color: red;
+        }
+        .second {
+            margin-top: 50px;
+            background-color: blue;
+        }
+        .father {
+            width: 300px;
+            height: 300px;
+            /* padding-top: 100px; */
+            /* border: 1px solid black; */
+            /* overflow: hidden; */
+            display: inline-block;
+        }
+        .son {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            margin-top: 100px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <!-- 合并问题：相邻的块级元素margin取较大的那一个值，不会累加！ -->
+    <div class="first">这是div1</div>
+    <div class="second">这是div2</div>
+    <!-- 塌陷问题，嵌套的块级元素，子元素的margin会连带父元素生效 -->
+    <!-- 解决方法1：父元素使用padding-top或使用border -->
+    <!-- 解决方法2***：父元素使用overflow: hidden -->
+    <!-- 解决方法3：转换成行内块元素 -->
+    <div class="father">
+        <div class="son">
+            塌陷问题
+        </div>
+    </div>
+</body>
+</html>

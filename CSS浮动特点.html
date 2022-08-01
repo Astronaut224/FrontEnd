@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 浮动元素不在标准流（CSS排版顺序）中，可以覆盖标准流中的元素（优先级高，覆盖盒子但不覆盖内容） */
+        /* 浮动元素有行内块元素的特性，一行可以有多个，可以设置宽高 */
+        .one {
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            float: left;
+            margin-top: 50px;
+        }
+        .two {
+            width: 200px;
+            height: 200px;
+            background-color: skyblue;
+            /* 浮动元素会尽量向左或向右，直到遇到边框 */
+            float: left;
+            /* 浮动优先级比标准流高，所以以浮动为准 */
+            margin: 0 auto;
+        }
+        .three {
+            width: 300px;
+            height: 300px;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="one">first</div>
+    <div class="two">second</div>
+    <div class="three">third</div>
+</body>
+</html>

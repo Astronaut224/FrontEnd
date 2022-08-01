@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 字体大小font-size */
+        /* 字体粗细font-weight，400为正常，700为加粗，可填100~900 */
+        /* 字体font-family，根据用户安装字体显示，建议无衬线字体sans-serif */
+        div {
+            font-size: 30px;
+            font-weight: 700;
+            font-family: 微软雅黑,黑体,sans-serif;
+        }
+        /* 字体倾斜font-style */
+        em {
+            font-style: normal;
+        }
+        p {
+            font-style: italic;
+        }
+        /* font复合属性（固定顺序），font: style weight size 字体 */
+        /* CSS层叠特性，后面的覆盖前面的 */
+        .ziti {
+            font-style: normal;
+            font: italic 700 30px 宋体;
+        }
+        
+    </style>
+</head>
+<body>
+    <div>这是div标签</div>
+    <em>这是em标签</em>
+    <p>使字体倾斜</p>
+    <div class="ziti">测试复合属性和层叠</div>
+</body>
+</html>

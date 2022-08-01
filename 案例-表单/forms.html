@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>青春不常在，抓紧谈恋爱</h1>
+    <hr>
+    <!-- 表单提交、重置等按钮的作用域，action是提交表单后具体跳到的地址，这里先不填 -->
+    <form action="">
+        <!-- 文本输入表单，placeholder是提示文字 -->
+        昵称：<input type="text" placeholder="请输入昵称">
+        <br><br>
+        <!-- 单选表单，用label标签可以点击文字选中 -->
+        性别：<input type="radio" name="sex" id="male" checked><label for="male">男</label>
+             <label><input type="radio" name="sex">女</label>
+        <br><br>
+        <!-- 下拉表单 -->
+        所在城市：<select>
+            <option selected>上海</option>
+            <option>北京</option>
+            <option>广州</option>
+            <option>深圳</option>
+        </select>
+        <br><br>
+        <!-- 单选 -->
+        婚姻状况：<label><input type="radio" name="marriage" checked>未婚</label>
+                <label><input type="radio" name="marriage">已婚</label>
+                <label><input type="radio" name="marriage">保密</label>
+        <br><br>
+        <!-- 多选表单 -->
+        喜欢的类型：<label><input type="checkbox">可爱</label>
+                    <label><input type="checkbox">性感</label>
+                    <label><input type="checkbox">御姐</label>
+                    <label><input type="checkbox">萝莉</label>
+                    <label><input type="checkbox">小鲜肉</label>
+                    <label><input type="checkbox">大叔</label>
+        <br><br>
+        <!-- 文本域 -->
+        个人介绍：
+        <br>
+        <textarea cols="30" rows="10"></textarea>
+        <br>
+        <h2>我承诺：</h2>
+        <ul>
+            <li>年满18岁、单身</li>
+            <li>抱着真诚的态度</li>
+            <li>寻找另一半</li>
+        </ul>
+        <input type="checkbox">我同意所有条款
+        <br><br>
+        <input type="submit" value="免费注册">
+        <input type="reset">
+    </form>
+</body>
+</html>

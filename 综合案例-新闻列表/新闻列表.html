@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            /* 防止盒子被margin和padding撑大，使用内减模式 */
+            box-sizing: border-box;
+        }
+        .news {
+            width: 625px;
+            height: 500px;
+            background-color: #fff;
+            border: 1px solid #dbdbdb;
+            /* 顺序为上右下左，没有的看对面数值 */
+            padding: 56px 40px 0px;
+            margin: 50px auto;
+
+        }
+        .news h2 {
+            font-size: 38px;
+            border-bottom: 1px solid #d2d2d2;
+            /* 行高为字体大小的1倍间距 */
+            line-height: 1;
+            padding-bottom: 10px;
+        }
+        li {
+            /* 去除列表前的符号 */
+            list-style: none;
+            height: 64px;
+            border-bottom: 1px dashed #dcdcdc;
+        }
+        .news a  {
+            color: #7c707c;
+            font-size: 22px;
+            line-height: 64px;
+            text-decoration: none;
+            padding-left: 36px;
+        }
+    </style>
+</head>
+<body>
+    <div class="news">
+        <h2>最新文章/New Articles</h2>
+        <ul>
+            <li><a href="#">北京招聘网页、平面设计、PHP</a></li>
+            <li><a href="#">体验javascript的魅力</a></li>
+            <li><a href="#">jquery世界来临</a></li>
+            <li><a href="#">网页设计师的梦想</a></li>
+            <li><a href="#">jquery链式编程是什么</a></li>
+        </ul>
+    </div>
+</body>
+</html>

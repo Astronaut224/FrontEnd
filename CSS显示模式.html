@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            background-color: pink;
+            width: 300px;
+            height: 300px;
+        }
+        span {
+            background-color: red;
+            width: 300px;
+            height: 300px;
+        }
+        input {
+            width: 300px;
+            height: 100px;
+        }
+        p {
+            display: inline-block;
+            background-color: brown;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 块标签：独占一行；宽默认是父标签的100%；添加宽高会生效 -->
+    <div>divdivdiv</div>
+    <!-- 行内标签：一行可以有多个；宽度由内容决定；添加宽高不会生效 -->
+    <span>span</span>
+    <!-- 行内块标签：一行可以有多个；添加宽高会生效 -->
+    <input type="text">
+    <!-- 转换显示模式，display: block|inline-block|inline -->
+    <p>pppppppppppp</p>
+</body>
+</html>

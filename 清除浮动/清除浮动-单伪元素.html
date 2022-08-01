@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .top {
+            margin: 0 auto;
+            width: 1000px;
+            /* 问题：将父元素的高去掉后，子元素浮动，标准流的元素受浮动影响会上移 */
+            /* 某些情况下，如数据库中的内容会变化的导致盒子没有固定高度，就不能设置高 */
+            /* height: 300px; */
+            background-color: pink;       
+        }
+        .bottom {
+            height: 100px;
+            background-color: green;
+        }
+        .left {
+            float: left;
+            width: 200px;
+            height: 300px;
+            background-color: brown;
+        }
+        .right {
+            float: right;
+            width: 750px;
+            height: 300px;
+            background-color: skyblue;
+        }
+
+        .clearfix::after {
+            /* 解决方法二，单伪元素 */
+            content: '';
+            /* 需要添加块级标签，而伪元素默认为行内标签 */
+            display: block;
+            clear: both;
+
+            /* 为了兼容性 */
+            height: 0;
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+    <!-- 父元素既调用top类，也调用clearfix类 -->
+    <div class="top clearfix">
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+    <div class="bottom"></div>
+</body>
+</html>

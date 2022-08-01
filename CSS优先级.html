@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 比较优先级，行内>id>类>标签 */
+        /* 计算对应优先级选择器个数，优先级高的选中 */
+        /* !important优先级最高，继承最低 */
+        /* p.son {
+            color: yellow !important;
+        } */
+
+        /* 0,1,1,0 */
+        .father #play {
+            color: blue;
+        }
+        /* 0,0,0,2 */
+        div p {
+            color: red;
+        }
+        /* 0,0,2,0 */
+        .father .son {
+            color: pink;
+        }
+        /* 0,1,0,1 */
+        div #play {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="father">
+        <p class="son" id="play">
+            幸福的颜色
+        </p>
+    </div>
+</body>
+</html>

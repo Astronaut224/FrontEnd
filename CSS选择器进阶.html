@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 后代选择器，包括子代、孙代 */
+        div p {
+            color: red;
+        }
+        /* 子代选择器，只选择子代 */
+        div>a {
+            color: green;
+        }
+        /* 并集选择器 */
+        div,p,a {
+            font-style: italic;
+        }
+        /* 交集选择器，比如只想选择带box类的h1标签 */
+        .box {
+            color: yellow;
+        }
+        h1.box {
+            color: black;
+        }
+        /* 伪类选择器，鼠标悬停时才显示效果 */
+        p a:hover {
+            color: red;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <p>这是一个p标签</p>
+    <div>
+        <a href="#">这儿是div的儿子a</a>
+        <br>
+        <p>
+            这是div的儿子p
+            <a href="#">这是p的儿子a</a>
+        </p>
+    </div>
+    <h1 class="box">这是h1标签:box</h1>
+    <h1>这是普通h1标签</h1>
+    <h2 class="box">这是h2标签:box</h2>
+</body>
+</html>
