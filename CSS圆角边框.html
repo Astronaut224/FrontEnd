@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+
+            /* border-radius设置圆角的半径 */
+            /* border-radius: 10%; */
+
+            /* border-radius取值按照左上、右上、右下、左下顺时针，没有的取对角值 */
+            /* border-radius: 10% 20% 40% 80%; */
+            /* border-radius: 10% 40% 10%; */
+
+            /* 应用场景一：正圆，需要原本的盒子是正方形 */
+            border-radius: 50%;
+        }
+        .shape {
+            /* 应用场景二：胶囊形状，border-radius值为高的一半 */
+            width: 400px;
+            height: 200px;
+            background-color: skyblue;
+            border-radius: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="shape"></div>
+</body>
+</html>

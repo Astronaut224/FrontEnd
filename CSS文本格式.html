@@ -21,6 +21,20 @@
         div {
             text-align: center; 
         }
+
+        /* 垂直对齐方式 */
+        /* 浏览器把行内和行内块元素当作文字处理，默认基线对齐baseline */
+        /* vertical-align和行高配合可以实现嵌套的垂直居中。 */
+        /* vertical-align取值：top middle bottom baseline默认 */
+        .one {
+            width: 300px;
+            height: 300px;
+            background-color: pink;
+            line-height: 300px;
+        }
+        .two {
+            vertical-align: middle;
+        }
     </style>
 </head>
 <body>
@@ -28,5 +42,9 @@
     <!-- 不用div标签的话水平对齐就要设置body标签了 -->
     <div><img src="./企鹅物流.jpg" alt="图片" width="500"></div>
     <p>《明日方舟》是一款魔物主题的策略手游。在游戏中,玩家将管理一艘满载“ 魔物干员”的方舟,为调查来源神秘的矿石灾难而踏上旅途。</p>
+
+    <div class="one">
+        <input type="text" class="two">
+    </div>
 </body>
 </html>

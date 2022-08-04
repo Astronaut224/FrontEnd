@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 显示层级：标准流<浮动<定位 */
+        /* 同样是定位，HTML写在后面的会覆盖前面的。后来者居上 */
+        /* z-index：整数，数值越大显示顺序越靠上，z-index默认是0。属性必须配合定位使用。 */
+        .one {
+            position: absolute;
+            left: 30px;
+            top: 50px;
+
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+
+            z-index: 1;
+        }
+        .two {
+            position: absolute;
+            left: 50px;
+            top: 100px;
+
+            width: 100px;
+            height: 100px;
+            background-color: skyblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="one">one</div>
+    <div class="two">two</div>
+</body>
+</html>

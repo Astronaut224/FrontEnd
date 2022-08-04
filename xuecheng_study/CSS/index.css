@@ -1,0 +1,319 @@
+/* 去除内外边距并使用內减模式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 删除列表样式 */
+li {
+    list-style: none;
+}
+/* 删除超链接标签样式 */
+a {
+    text-decoration: none;
+}
+/* 清除浮动 */
+.clearfix:after,.clearfix:before {
+    content: '';
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+
+body {
+    background-color: #f3f5f7;
+}
+
+/* 版心居中样式 */
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* 头部 */
+.header {
+    height: 42px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+h1 {
+    float: left;
+}
+
+/* 导航 */
+.nav {
+    float: left;
+    margin-left: 70px;
+    height: 42px;
+}
+
+.nav li {
+    float: left;
+    margin-right: 26px;
+}
+
+.nav li a {
+    display: block;
+    padding: 0 9px;
+    height: 42px;
+    line-height: 42px;
+    color: black;
+    font-size: 18px;
+}
+
+.nav li a:hover {
+    border-bottom: 2px solid #00a4ff;
+}
+
+/* 搜索框 */
+.search {
+    float: left;
+    margin-left: 59px;
+    width: 412px;
+    height: 40px;
+    border: 1px solid #00a4ff;
+}
+
+.search input {
+    float: left;
+    padding-left: 20px;
+    width: 360px;
+    height: 38px;
+    border: 0;
+}
+
+.search input::placeholder {
+    font-size: 14px;
+    color: #bfbfbf;
+}
+
+.search button {
+    float: left;
+    width: 50px;
+    height: 40px;
+    border: 0;
+    background-image: url(../images/btn.png);
+}
+
+/* 用户信息 */
+.user {
+    float: right;
+    margin-right: 35px;
+    height: 42px;
+    line-height: 42px;
+}
+
+.user img {
+    /* 调节垂直对齐方式 */
+    vertical-align: middle;
+}
+
+/* 轮播图 */
+.banner {
+    height: 420px;
+    background-color: #1c036c;
+}
+.banner .wrapper {
+    height: 420px;
+    background-image: url(../images/banner2.png);
+}
+
+.banner .left {
+    float: left;
+    padding: 0 20px;
+    width: 190px;
+    height: 420px;
+    background-color: rgba(0,0,0,0.3);
+
+    line-height: 44px;
+}
+.banner .left a {
+    font-size: 14px;
+    color: #fff;
+}
+.banner .left a:hover {
+    color: #00b4ff;
+}
+.banner .left span {
+    float: right;
+}
+
+.banner .right {
+    float: right;
+    margin-top: 50px;
+    width: 228px;
+    height: 300px;
+    background-color: #fff;
+}
+.banner .right h2 {
+    height: 48px;
+    background-color: #9bceea;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    line-height: 48px;
+}
+.banner .right .content {
+    padding: 0 18px;
+}
+.banner .right .content dl {
+    padding: 12px 0;
+    border-bottom: 2px solid #e5e5e5;
+}
+.banner .right .content dt {
+    font-size: 16px;
+    font-weight: 700;
+    color: #4e4e4e;
+}
+.banner .right .content dl {
+    font-size: 12px;
+    font-weight: 700;
+    color: #a5a5a5;
+}
+.banner .right .content a {
+    display: block;
+    margin: 14px auto 0;
+    width: 200px;
+    height: 40px;
+    border: 1px solid #00a4ff;
+    font-size: 16px;
+    font-weight: 700;
+    color: #00a4ff;
+    text-align: center;
+    line-height: 40px;
+}
+
+/* 精品推荐 */
+.goods {
+    margin-top: 8px;
+    height: 60px;
+    background-color: #fff;
+    box-shadow: 0px 2px 3px 0px
+    rgba(118,118,118,0.2);
+
+    line-height: 60px;
+}
+.goods h2 {
+    float: left;
+    margin-left: 34px;
+    font-size: 16px;
+    color: #00a4ff;
+}
+.goods ul {
+    float: left;
+    margin-left: 34px;
+}
+.goods ul li {
+    float: left;
+}
+.goods li a {
+    border-left: 1px solid #bfbfbf;
+    padding: 0 30px;
+    font-size: 16px;
+    color: black;
+}
+.goods .xingqu {
+    float: right;
+    margin-right: 26px;
+    font-size: 14px;
+    color: #00a4ff;
+}
+
+/* 精品课程 */
+.box {
+   margin-top: 37px; 
+}
+.box .title {
+    height: 40px;
+}
+.box .title h2 {
+    float: left;
+    font-size: 20px;
+    font-weight: normal;
+    color: #494949;
+}
+.box .title a {
+    float: right;
+    margin: 8px 35px 0px 0px;
+    font-size: 12px;
+    color: #a5a5a5;
+}
+
+.box .content li {
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    width: 228px;
+    height: 270px;
+    background-color: #fff;
+}
+.box .content li:nth-child(5n) {
+    margin-right: 0;
+}
+.box .content h3 {
+    padding: 25px 20px 20px 24px;
+    font-size: 14px;
+    font-weight: normal;
+    color: #050505;
+}
+.box .content p {
+    padding: 0px 20px;
+    font-size: 12px;
+    color: #999999;
+}
+.box .content p span {
+    color: #ff7c2d;
+}
+
+/* 版权区域 */
+.footer {
+    margin-top: 40px;
+    padding-top: 30px;
+    height: 420px;
+    background-color: #fff;
+}
+.footer .left {
+    float: left;
+    margin-left: 20px;
+}
+.footer .left p {
+    margin: 25px 0 15px;
+}
+.footer .left a {
+    display: inline-block;
+    width: 120px;
+    height: 36px;
+    font-size: 16px;
+    color: #00a4ff;
+    text-align: center;
+    line-height: 34px;
+    border: 1px solid #00a4ff;
+}
+.footer .right {
+    float: right;
+}
+.footer .right dl {
+    float: left;
+    margin-left: 120px;
+}
+.footer .right dl dt {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+.footer .right dl dd {
+    font-size: 12px;
+    line-height: 21px;
+}
+
+/* 精品课程的上标HOT小图片，子绝父相 */
+.box .content li {
+    position: relative;
+}
+.box .content li .hot {
+    position: absolute;
+    right: -4px;
+    top: 4px;
+}

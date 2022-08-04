@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .banner {
+            position: relative;
+            width: 1226px;
+            height: 600px;
+            margin: 0 auto;
+        }
+        .mask {
+            position: absolute;
+            /* 绝对定位具备行内块的显示模式，如果不设置宽度且没有内容，行内块的宽度就会是0 */
+            /* 设置宽度为父级元素的100% */
+            width: 100%;
+            height: 150px;
+            left: 0;
+            bottom: 0;
+            background-color: rgba(0,0,0,0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <img src="./bg.jpg" alt="">
+        <div class="mask"></div>
+    </div>
+</body>
+</html>
