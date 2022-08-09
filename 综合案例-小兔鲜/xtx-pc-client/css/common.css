@@ -1,0 +1,208 @@
+/* 公共通用的样式 */
+/* 版心居中 */
+.wrapper {
+    width: 1240px;
+    margin: 0 auto;
+}
+/* 快捷导航栏 */
+.shortcut {
+    height: 52px;
+    background-color: #333;
+}
+.shortcut .wrapper {
+    height: 52px;
+}
+.shortcut .wrapper ul {
+    float: right;
+}
+.shortcut .wrapper ul li {
+    float: left;
+    position: relative;
+}
+.shortcut .wrapper li a {
+    padding: 0px 16px;
+    color: #dcdcdc;
+    font-size: 14px;
+    line-height: 52px;
+    border-right: 1px solid #666;
+}
+/* 清除最后一个li里a的边框 */
+.shortcut .wrapper li:last-child a {
+    padding-right: 0px;
+    padding-left: 34px;
+    border-right: none;
+}
+.shortcut .wrapper span {
+    position: absolute;
+    left: 15px;
+    top: 18px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 11px;
+    height: 16px;
+    background-image: url(../images/sprites.png);
+    background-position: -160px -70px;
+}
+
+/* 头部标题栏 */
+.header {
+    height: 130px;
+    margin: 30px auto;
+    background-color: #fff;
+}
+.header .logo {
+    float: left;
+    margin: 30px 19px 30px 25px;
+    width: 207px;
+    height: 70px;
+}
+.header h1 {
+    width: 207px;
+    height: 70px;
+}
+.header h1 a {
+    display: block;
+    width: 207px;
+    height: 70px;
+    background-image: url(../images/logo.png);
+    background-size: contain;
+    font-size: 0;
+}
+.header .nav ul {
+    float: left;
+    margin-left: 21px;
+    line-height: 130px;
+}
+.header .nav ul li {
+    float: left;
+    margin-right: 48px;
+}
+.header .nav li a {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 30px;
+}
+.header .nav li a:hover {
+    color: #27ba9b;
+    border-bottom: 1px solid #27ba9b;
+}
+.header .search {
+    float: left;
+    position: relative;
+    margin: 54px 15px 46px 34px;
+    width: 172px;
+    height: 30px;
+    border-bottom: 2px solid #e7e7e7;
+}
+
+.header .search input {
+    padding-left: 30px;
+    width: 142px;
+}
+.header .search input::placeholder {
+    font-size: 14px;
+    color: #ccc;
+}
+.header .search .look {
+    position: absolute;
+    left: 2px;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    background-image: url(../images/sprites.png);
+    background-position: -80px -70px;
+}
+.header .shopping {
+    position: relative;
+    float: left;
+    margin-top: 58px;
+    width: 23px;
+    height: 23px;
+    background-image: url(../images/sprites.png);
+    background-position: -120px -69px;
+}
+.header .shopping a {
+    display: inline-block;
+    width: 23px;
+    height: 23px;
+}
+.header .shopping span {
+    position: absolute;
+    left: 14px;
+    top: -5px;
+    /* 绝对定位后标签具备行内块的特点 */
+    width: 20px;
+    height: 15px;
+    background-color: #e26237;
+    border-radius: 8px;
+
+    text-align: center;
+    font-size: 13px;
+    color: #fff;
+}
+
+/* 底部版权 */
+.footer {
+    height: 342px;
+    background-color: #333;
+}
+.footer .wrapper {
+    width: 1393px;
+}
+.footer .wrapper .top {
+    padding-top: 60px;
+    padding-left: 135px;
+    height: 170px;
+    border-bottom: 3px solid #434343;
+}
+.footer .wrapper .top li {
+    float: left;
+    position: relative;
+    margin-right: 300px;
+    width: 195px;
+    height: 58px;
+    text-align: right;
+    line-height: 58px;
+    font-size: 28px;
+    color: #fff;
+    font-family: 'PingFangSC-Light';
+}
+.footer .wrapper .top li:last-child {
+    margin-right: 0;
+}
+.footer .wrapper .top li span {
+    position: absolute;
+    left: 0;
+    width: 58px;
+    height: 58px;
+}
+.footer .top span.box {
+    background-image: url(../images/sprites.png);
+    background-position: 0px 0px;
+}
+.footer .top span.car {
+    background-image: url(../images/sprites.png);
+    background-position: -64px 0px;
+}
+.footer .top span.hand {
+    background-image: url(../images/sprites.png);
+    background-position: -128px 0px;
+}
+
+.footer .bottom {
+    padding-left: 428px;
+    padding-top: 40px;
+}
+.footer .bottom li {
+    float: left;
+}
+.footer .bottom li a {
+    display: inline-block;
+    padding: 0px 9px;
+    font-size: 14px;
+    color: #999;
+    border-right: 1px solid #999;
+}
+.footer .bottom li:last-child a {
+    border-right: 0;
+}

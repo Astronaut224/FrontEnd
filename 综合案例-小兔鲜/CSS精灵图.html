@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .phone {
+            display: inline-block;
+            width: 18px;
+            height: 24px;
+            background-color: pink;
+            background-image: url(./images/taobao.png);
+            background-position: -3px 0px;
+        }
+        .pig {
+            display: inline-block;
+            width: 25px;
+            height: 21px;
+            background-image: url(./images/taobao.png);
+            background-position: 0px -90px;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+    <!-- CSS精灵图就是把多张小图合成一张大图，降低服务器发送的压力，提高加载速度 -->
+    <!-- 使用步骤：
+        1. 创建和小图大小相同的盒子
+        2. 将精灵图设置为背景图
+        3. 设置精灵图位置，测量小图的长宽设置成负值调整背景图位置：background-position: x y; -->
+    <!-- CSS精灵图一般用行内标签 -->
+    <span class="phone"></span>
+    <span class="pig"></span>
+</body>
+</html>
